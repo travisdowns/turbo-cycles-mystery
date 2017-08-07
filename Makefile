@@ -28,3 +28,6 @@ libpfc:
 libpfc-clean:		
 	cd libpfc && $(MAKE) clean
 
+run:
+	sudo sh -c "echo 2 > /sys/bus/event_source/devices/cpu/rdpmc; rmmod pfc 2>/dev/null; insmod libpfc/pfc.ko"
+	./mystery

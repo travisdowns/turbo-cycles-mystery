@@ -12,8 +12,11 @@ sudo insmod libpfc/pfc.ko
 
 # Run
 ```
-./mystery
+make run
 ```
+
+This will prompt your for root credentials to install the `pfc.ko` kernel module, as well as enable userland
+`rdpmc` calls. You can inpsect the makefile for details.
 
 # Typical Output
 
