@@ -1,4 +1,4 @@
-Code the question of why there appear to be missed REF_TSC cycles when TurboBoost is enabled, 
+Code demonstrating the apparent missed REF_TSC cycles when TurboBoost is enabled, 
 as described on this [Stack Overflow question](https://stackoverflow.com/q/45472147/149138).
 
 # Clone, Build and Install Kernel Module
@@ -15,8 +15,8 @@ sudo insmod libpfc/pfc.ko
 make run
 ```
 
-This will prompt your for root credentials to install the `pfc.ko` kernel module, as well as enable userland
-`rdpmc` calls. You can inpsect the makefile for details.
+This will prompt you for root credentials to install the `pfc.ko` kernel module, as well as enable userland
+`rdpmc` calls. The demo process itself is not run as root. You can inpsect the makefile for details.
 
 # Typical Output
 
