@@ -30,7 +30,7 @@
 *.exe
 *.out
 *.app
-uarch-bench
+mystery
 
 # Eclipse CDT artifacts
 .cproject
